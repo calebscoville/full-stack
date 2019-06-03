@@ -13,7 +13,7 @@ class Details extends Component {
             this.props.history.push('/login')
         })
 }
-    }
+    
 
     handleUserLogout = () => {
 		axios.get('/auth/logout').then((res) => {
@@ -35,9 +35,11 @@ class Details extends Component {
 				)}
 			</div>
 		)
-    }
+				}
+			}
+    
     // .catch((err) => )
-// }
+	
 
 function mapStateToProps(reduxState) {
 	return {
