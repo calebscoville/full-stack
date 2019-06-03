@@ -26,6 +26,7 @@ function reducer(state = initialState, action){
     switch(action.type){
         case UPDATE_USER:
             console.log('ACTION PAYLOAD', action.payload)
+            const
             return state
             default:
                 return state
